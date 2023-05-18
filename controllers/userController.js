@@ -137,7 +137,7 @@ module.exports.AddNewAppointment = async (req, res, next) => {
       console.log(patientInfo)
       if (!patientInfo) {
         return res.status(401).json({
-          errors: { user: "User already exists" },
+          errors: { user: "Patient doesn't exists" },
         });
       }
   
